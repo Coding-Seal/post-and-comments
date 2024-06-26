@@ -1,0 +1,6 @@
+type User {
+    id: ID!
+}
+input UserInput {
+    id: ID!
+}

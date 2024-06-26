@@ -1,0 +1,4 @@
+type Query {
+    posts(postLimit:Int!, postOffset:Int!, commentLimit: Int!, commentOffset: Int!, depthLimit: Int!): [Post!]!
+    post(postID: ID!,commentLimit: Int!, commentOffset: Int!, depthLimit: Int!, afterComment: ID): Post!
+}

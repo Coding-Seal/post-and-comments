@@ -1,0 +1,14 @@
+type Comment {
+    id: ID!
+    author: User!
+    published: Time!
+    text: String!
+    postID: ID!
+    replies: [Comment]
+}
+input CommentInput {
+    author: UserInput!
+    text: String!
+    postID: ID!
+    parentComment: ID!
+}

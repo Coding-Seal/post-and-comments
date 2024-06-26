@@ -1,0 +1,5 @@
+type Mutation {
+    commentCreate(comment: CommentInput!): Comment!
+    postCreate(post: PostInput!): Post!
+    disableComments(postID: ID!): Post!
+}
